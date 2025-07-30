@@ -4,7 +4,25 @@
       "command": "npx",
       "args": ["@vooster-ai/mcp-server"],
       "env": {
-        "VOOSTER_API_KEY": "${VOOSTER_API_KEY}"
+        "VOOSTER_API_KEY": "ak_m3hth78i4zrbhotp92u38vwk"
+      }
+    },
+    "context7": {
+      "type": "http",
+      "url": "https://mcp.context7.com/mcp"
+    },
+    "sequential-thinking": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"],
+      "env": {}
+    },
+    "magic": {
+      "type": "stdio", 
+      "command": "npx",
+      "args": ["-y", "@21st-dev/magic@latest"],
+      "env": {
+        "API_KEY": "your-api-key-here"
       }
     },
     "filesystem": {
